@@ -1,0 +1,26 @@
+package Ankur;
+import java.util.*;
+public class Solution {
+
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		int test=scan.nextInt();
+		for(int i=0;i<test;i++)
+		{
+			String str=scan.nextLine();
+			String first="";
+			String Sec="";
+			for(int j=0;j<str.length();j++){
+				if(j%2 ==0)
+					first=first+str.charAt(j);
+				else
+					Sec=Sec+str.charAt(j);
+			 }
+			System.out.println(first+" "+Sec);
+		}
+		
+
+	}
+
+}
